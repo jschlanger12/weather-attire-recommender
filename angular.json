@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "weather-attire-recommender:build"
+            "browserTarget": "weather-attire-recommender:build",
+            "proxyConfig": "src/proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "weather-attire-recommender"
+    }
+  },
+  "defaultProject": "weather-attire-recommender",
+  "cli": {
+    "analytics": "22a8a615-e367-4b82-9d38-0ebd73aa8703"
+  }
 }
